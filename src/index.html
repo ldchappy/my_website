@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>fullPage.js One Page Scroll Sites</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+    <meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="./lib/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/examples.css" />
+
+
+    <style>
+
+        /* Sections
+         * --------------------------------------- */
+        #section0 img,
+        #section1 img{
+            margin: 20px 0 0 0;
+            width:230px;
+            height:270px;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            border-radius:50%;
+        }
+        #section0 .name{
+            margin-top: 20px;
+        }
+        #section2 img{
+            margin: 20px 0 0 52px;
+        }
+        #section3 img{
+            bottom: 0px;
+            position: absolute;
+            margin-left: -420px;
+        }
+        .intro{
+            height: 460px;
+        }
+        .intro h2{
+            margin-top:100px;
+        }
+        .intro p{
+            width: 80%;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+        #section2{
+            border-top:1px solid transparent;
+        }
+        .live{
+            margin-top:150px;
+        }
+
+        .intro{
+            position:relative;
+        }
+        .intro .web{
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            left: 50%;
+            margin-left: -200px;
+        }
+        .intro .web .circle1{
+            width:50px;
+            height:50px;
+            left: 50%;
+            margin-left: -25px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 20px red;
+            animation:circle 3.7s linear infinite;
+        }
+        .intro .web .circle2{
+            width:80px;
+            height:80px;
+            left: 50%;
+            margin-left: -40px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 20px red;
+            animation:circle 4s linear infinite;
+        }
+        .intro .web .circle3{
+            width:110px;
+            height:110px;
+            left: 50%;
+            margin-left: -55px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 20px red;
+            animation:circle 5s linear infinite;
+        }
+        .intro .web .circle4{
+            width:140px;
+            height:140px;
+            left: 50%;
+            margin-left: -70px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 20px red;
+            animation:circle 3.3s linear infinite;
+        }
+        .intro .web .circle5{
+            width:170px;
+            height:170px;
+            left: 50%;
+            margin-left: -85px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 4.5s linear infinite;
+        }
+        .intro .web .circle6{
+            width:200px;
+            height:200px;
+            left: 50%;
+            margin-left: -100px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 5.7s linear infinite;
+        }
+        .intro .web .circle7{
+            width:230px;
+            height:230px;
+            left: 50%;
+            margin-left: -115px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 5s linear infinite;
+        }
+        .intro .web .circle8{
+            width:260px;
+            height:260px;
+            left: 50%;
+            margin-left: -130px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 4.8s linear infinite;
+        }
+        .intro .web .circle9{
+            width:290px;
+            height:290px;
+            left: 50%;
+            margin-left: -145px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 4.2s linear infinite;
+        }
+        .intro .web .circle10{
+            width:320px;
+            height:320px;
+            left: 50%;
+            margin-left: -160px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 5s linear infinite;
+        }
+        .intro .web .circle11{
+            width:350px;
+            height:350px;
+            left: 50%;
+            margin-left: -175px;
+            position: absolute;
+            display: block;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+            animation:circle 4s linear infinite;
+        }
+
+        @keyframes circle{
+            0%{
+                transform: rotate(0deg);
+            }
+            0%{
+                transform:rotate(360deg);
+            }
+        }
+
+        .slide{
+            display: flex;
+        }
+        .liveintro{
+            width:500px;
+            height: 400px;
+            margin: -200px auto 0px;
+            background-color: #9fe1e7;
+        }
+
+    </style>
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+    <script src="./lib/jquery.min-1.7.2.js"></script>
+
+
+    <script type="text/javascript" src="./lib/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage'],
+                menu: '#menu',
+                scrollingSpeed: 1000
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">First</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">Fourth</a></li>
+    <li data-menuanchor="5thpage"><a href="#5thpage">Fifth</a></li>
+</ul>
+
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <img src="./images/zj.png" alt="卢东成-前端工程师" title=卢东成-前端工程师" />
+        <h2>行动是治愈恐惧的良药 而犹豫、拖延将不断滋养恐惧</h2>
+        <p class="name">名称：卢东成</p>
+        <p class="pos">定位：前端工程师</p>
+        <p class="mail">邮箱：577306063@qq.com</p>
+    </div>
+    <div class="section" id="section1">
+
+            <div class="intro">
+                <h2>技术栈</h2>
+                <div class="web">
+                    <div class="circle1">js</div>
+                    <div class="circle2">jQery</div>
+                    <div class="circle3">Sass</div>
+                    <div class="circle4">h5</div>
+                    <div class="circle5">css3</div>
+                    <div class="circle6">requirejs</div>
+                    <div class="circle7">Swiper</div>
+                    <div class="circle8">angularjs</div>
+                    <div class="circle9">Vuejs</div>
+                    <div class="circle10">nodejs</div>
+                    <div class="circle11">webpack</div>
+                </div>
+            </div>
+
+    </div>
+    <div class="section" id="section2">
+            <h2 class="live">经历</h2>
+            <div class="slide">
+                <div class="liveintro">
+
+                </div>
+            </div>
+            <div class="slide">
+                <div class="liveintro">
+
+                </div>
+            </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="intro">
+            <h2>作品集</h2>
+            <p>HTML markup example to define 4 sections.</p>
+            <img src="imgs/example2.png" alt="example" />
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="intro">
+            <h2></h2>
+            <p>
+                Designed to fit to different screen sizes as well as tablet and mobile devices.
+                <br /><br /><br /><br /><br /><br />
+            </p>
+        </div>
+        <img src="imgs/tablets.png" alt="tablets" />
+    </div>
+</div>
+
+</body>
+</html>
