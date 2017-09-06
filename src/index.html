@@ -268,13 +268,53 @@
             margin:0 auto;
         }
 
+        .intro_zj div{
+            /*float: left;*/
+        }
         .intro_zj{
             width:320px;
             height:200px;
             float: left;
             margin-right: 20px;
+            position: relative;
             background-color: #00d6b2;
+            /*overflow: hidden;*/
         }
+
+        .intro_zj img{
+            width:320px;
+            height:200px;
+            transition:.5s;
+            box-sizing: content-box;
+        }
+
+        .intro_zj .image-box{
+            width:316px;
+            height:196px;
+            float: left;
+            border:2px solid white;
+        }
+
+        .text-desc{
+            float: left;
+            transform:translate(100%,-100%);
+            opacity:1;
+            transition:.5s;
+        }
+
+        .intro_zj .image-box:hover img{
+            transform:scale(0.5) translateX(-100%);
+            position: relative;
+            z-index: 9;
+            border:2px solid rgba(255,255,255,.8);
+        }
+        .intro_zj .image-box:hover .text-desc{
+
+            transform: translate(0px,-100%);
+            opacity:1;
+
+        }
+
 
     </style>
     <!--[if IE]>
@@ -378,9 +418,36 @@
         <div class="intro">
             <h2>我的足迹</h2>
             <div class="zj">
-                <div class="intro_zj"></div>
-                <div class="intro_zj"></div>
-                <div class="intro_zj"></div>
+                <div class="intro_zj">
+                    <div class="image-box">
+                        <img src="images/logo/bokeyuan.png" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                        <h3>Your Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="intro_zj">
+                    <div class="image-box">
+                        <img src="images/logo/github.png" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                        <h3>Your Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
+                <div class="intro_zj">
+                    <div class="image-box">
+                        <img src="images/img-1.jpg" alt="Image-1">
+                    </div>
+                    <div class="text-desc">
+                        <h3>Your Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" class="btn">Learn more</a>
+                    </div>
+                </div>
             </div>
 
         </div>
