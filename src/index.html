@@ -41,7 +41,8 @@
             height: 460px;
         }
         .intro h2{
-            margin-top:100px;
+            margin-bottom: 40px;
+            margin-top: 50px;
         }
         .intro p{
             width: 80%;
@@ -195,9 +196,84 @@
         }
         .liveintro{
             width:500px;
-            height: 400px;
+            height: 300px;
             margin: -200px auto 0px;
             background-color: #9fe1e7;
+            border: 1px solid purple;
+        }
+
+        .liveintro h4{
+            margin:30px auto;
+        }
+
+        .live_p{
+            font-size:16px;
+            font-family: "Helvetica", "Arial", serif;
+            text-align: left;
+        }
+
+        .controller{
+            width:980px;
+            height:500px;
+            margin:0 auto;
+            border-radius:10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .controller ul{
+            width:720px;
+        }
+        .section3_ul li{
+            width:980px;
+            height:500px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            position: absolute;
+
+        }
+        .section3_ul li a{
+            width:980px;
+            height:500px;
+            display: inline-block;
+        }
+        .section3_ul li:nth-child(1){
+
+            background-color: #9fe1e7;
+            /*left:0px;*/
+
+        }
+        .section3_ul li:nth-child(2){
+
+            background-color: #e7a7a7;
+            /*left:120px;*/
+
+        }
+        .section3_ul li:nth-child(3){
+
+            background-color: #a98ce7;
+            /*left:240px;*/
+
+        }
+        .section3_ul li:nth-child(4){
+
+            background-color: #59e7e7;
+            /*left:360px;*/
+
+        }
+
+        .zj{
+            width: 1020px;
+            height: 420px;
+            margin:0 auto;
+        }
+
+        .intro_zj{
+            width:320px;
+            height:200px;
+            float: left;
+            margin-right: 20px;
+            background-color: #00d6b2;
         }
 
     </style>
@@ -208,8 +284,6 @@
     <![endif]-->
 
     <script src="./lib/jquery.min-1.7.2.js"></script>
-
-
     <script type="text/javascript" src="./lib/jquery.fullPage.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -248,52 +322,71 @@
             <div class="intro">
                 <h2>技术栈</h2>
                 <div class="web">
-                    <div class="circle1">js</div>
-                    <div class="circle2">jQery</div>
-                    <div class="circle3">Sass</div>
-                    <div class="circle4">h5</div>
-                    <div class="circle5">css3</div>
-                    <div class="circle6">requirejs</div>
-                    <div class="circle7">Swiper</div>
-                    <div class="circle8">angularjs</div>
-                    <div class="circle9">Vuejs</div>
-                    <div class="circle10">nodejs</div>
-                    <div class="circle11">webpack</div>
+                    <div data-name="1" class="circle1">js</div>
+                    <div data-name="2" class="circle2">jQery</div>
+                    <div data-name="3" class="circle3">Sass</div>
+                    <div data-name="4" class="circle4">h5</div>
+                    <div data-name="5" class="circle5">css3</div>
+                    <div data-name="6" class="circle6">requirejs</div>
+                    <div data-name="7" class="circle7">Swiper</div>
+                    <div data-name="8" class="circle8">angularjs</div>
+                    <div data-name="9" class="circle9">Vuejs</div>
+                    <div data-name="10" class="circle10">nodejs</div>
+                    <div data-name="11" class="circle11">webpack</div>
                 </div>
             </div>
-
     </div>
     <div class="section" id="section2">
             <h2 class="live">经历</h2>
             <div class="slide">
                 <div class="liveintro">
-
+                    <h2>武汉鼎界网络有限公司</h2>
+                    <h4>2014/6--2015/1</h4>
+                    <p class="live_p">1、负责公司产品前端页面的设计及开发，根据需求及设计稿实现界面的各种静、动态的交互效果</p>
+                    <p class="live_p">2、参与产品前端框架的搭建，能完成整体页面结构及样式层结构的制作</p>
+                    <p class="live_p">3、解决不同浏览器及不同分辨率下的兼容性问题</p>
+                    <p class="live_p">4、提升前端交互性和易用性，为用户提供高质量的使用体验</p>
                 </div>
             </div>
             <div class="slide">
                 <div class="liveintro">
-
+                    <h2>东莞摩登科技有限公司</h2>
+                    <h4>2015/4--2017/7</h4>
+                    <p class="live_p">1、负责HTML/JavaScript/CSS代码的编写</p>
+                    <p class="live_p">2、解决前端Javascript/CSS等技术问题</p>
+                    <p class="live_p">3、处理多浏览器和多设备平台的兼容问题</p>
+                    <p class="live_p">4、负责与产品经理、项目经理沟通需求，配合UI设计实现界面展示和交互效果</p>
+                    <p class="live_p">5、为人诚实正直，做事认真负责，具有良好的沟通和团队协作能力</p>
                 </div>
             </div>
     </div>
     <div class="section" id="section3">
         <div class="intro">
             <h2>作品集</h2>
-            <p>HTML markup example to define 4 sections.</p>
-            <img src="imgs/example2.png" alt="example" />
+            <div class="controller">
+                <ul class="section3_ul">
+                    <li><a href="http://www.shpcb.com/" target="_blank"></a></li>
+                    <li><a href="http://www.leerw.com/" target="_blank"></a></li>
+                    <li><a href="http://www.dg716.com/" target="_blank"></a></li>
+                    <li><a href="http://www.aitaocui.cn/" target="_blank"></a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
     <div class="section" id="section4">
         <div class="intro">
-            <h2></h2>
-            <p>
-                Designed to fit to different screen sizes as well as tablet and mobile devices.
-                <br /><br /><br /><br /><br /><br />
-            </p>
+            <h2>我的足迹</h2>
+            <div class="zj">
+                <div class="intro_zj"></div>
+                <div class="intro_zj"></div>
+                <div class="intro_zj"></div>
+            </div>
+
         </div>
-        <img src="imgs/tablets.png" alt="tablets" />
     </div>
 </div>
 
+<script src="js.js"></script>
 </body>
 </html>
