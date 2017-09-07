@@ -295,24 +295,47 @@
             border:2px solid white;
         }
 
-        .text-desc{
+        .text-desc1,.text-desc2,.text-desc3{
             float: left;
             transform:translate(100%,-100%);
             opacity:1;
             transition:.5s;
         }
 
-        .intro_zj .image-box:hover img{
+        .intro_zj1:hover img{
             transform:scale(0.5) translateX(-100%);
             position: relative;
             z-index: 9;
             border:2px solid rgba(255,255,255,.8);
         }
-        .intro_zj .image-box:hover .text-desc{
-
+        .intro_zj1:hover .text-desc1{
             transform: translate(0px,-100%);
             opacity:1;
+            border:1px solid red;
+        }
 
+        .intro_zj2:hover img{
+            transform:scale(0.5) translateX(-100%);
+            position: relative;
+            z-index: 9;
+            border:2px solid rgba(255,255,255,.8);
+        }
+        .intro_zj2:hover .text-desc2{
+            transform: translate(0px,-100%);
+            opacity:1;
+            border:1px solid red;
+        }
+
+        .intro_zj3:hover img{
+            transform:scale(0.5) translateX(-100%);
+            position: relative;
+            z-index: 9;
+            border:2px solid rgba(255,255,255,.8);
+        }
+        .intro_zj3:hover .text-desc3{
+            transform: translate(0px,-100%);
+            opacity:1;
+            border:1px solid red;
         }
 
 
@@ -322,7 +345,6 @@
         var console = { log: function() {} };
     </script>
     <![endif]-->
-
     <script src="./lib/jquery.min-1.7.2.js"></script>
     <script type="text/javascript" src="./lib/jquery.fullPage.js"></script>
     <script type="text/javascript">
@@ -347,8 +369,6 @@
     <li data-menuanchor="4thpage"><a href="#4thpage">Fourth</a></li>
     <li data-menuanchor="5thpage"><a href="#5thpage">Fifth</a></li>
 </ul>
-
-
 <div id="fullpage">
     <div class="section active" id="section0">
         <img src="./images/zj.png" alt="卢东成-前端工程师" title=卢东成-前端工程师" />
@@ -418,31 +438,31 @@
         <div class="intro">
             <h2>我的足迹</h2>
             <div class="zj">
-                <div class="intro_zj">
-                    <div class="image-box">
+                <div class="intro_zj intro_zj1">
+                    <div class="image-box image-box1">
                         <img src="images/logo/bokeyuan.png" alt="Image-1">
                     </div>
-                    <div class="text-desc">
+                    <div class="text-desc1">
                         <h3>Your Title</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" class="btn">Learn more</a>
                     </div>
                 </div>
-                <div class="intro_zj">
-                    <div class="image-box">
+                <div class="intro_zj intro_zj2">
+                    <div class="image-box2">
                         <img src="images/logo/github.png" alt="Image-1">
                     </div>
-                    <div class="text-desc">
+                    <div class="text-desc2">
                         <h3>Your Title</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" class="btn">Learn more</a>
                     </div>
                 </div>
-                <div class="intro_zj">
-                    <div class="image-box">
+                <div class="intro_zj intro_zj3">
+                    <div class="image-box3">
                         <img src="images/img-1.jpg" alt="Image-1">
                     </div>
-                    <div class="text-desc">
+                    <div class="text-desc3">
                         <h3>Your Title</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" class="btn">Learn more</a>
